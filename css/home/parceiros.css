@@ -1,0 +1,14 @@
+.parceiros{
+  padding: 60px 0px 120px 0px;
+}
+
+.parceiros h2{
+  margin-bottom: 20px;
+}
+
+.parceiros ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+}
