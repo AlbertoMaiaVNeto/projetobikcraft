@@ -15,6 +15,7 @@
 .depoimento-conteudo{
   padding: 40px 40px 80px 80px;
   align-self: end;
+  background: url('../../img/dec/bottom-right-p.svg') no-repeat bottom 40px right 40px;
 }
 
 .depoimento-conteudo p{
@@ -41,6 +42,11 @@
   position: absolute;
   color: var(--corp2);
 }
+@media(min-width: 1200px){
+  .depoimento img{
+    max-height: 520px;
+  }
+}
 
 @media(max-width: 800px){
   .depoimento{
@@ -51,8 +57,24 @@
     margin: auto;
     padding: 40px 20px;
     justify-self: center;
+    background: none;
   }
   .depoimento img{
     max-height: 200px;
+  }
+  .depoimento-conteudo p::before{
+    content: '“';
+    font-size: 3rem;
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    color: var(--corp2);
+  }
+  
+  .depoimento-conteudo p::after{
+    content: '”';
+    font-size: 3rem;
+    position: absolute;
+    color: var(--corp2);
   }
 }

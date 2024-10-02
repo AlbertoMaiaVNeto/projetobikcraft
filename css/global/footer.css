@@ -46,11 +46,11 @@
 }
 
 @media(max-width:800px){
-  .footer > img{
-    display: none ;
-  }
   .footer{
     grid-template-columns: 1fr 1fr;
+  }
+  .footer-contato{
+    grid-column: 1;
   }
 }
 
