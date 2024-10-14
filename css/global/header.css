@@ -37,9 +37,9 @@
   transition: 0.3s;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
   width: 100%;
-
 }
 
 @media (max-width: 800px) {
@@ -51,7 +51,8 @@
     background-color: var(--cor11);
     border-radius: 5px;
   }
-  .header-menu a:hover {
+  .header-menu a:hover,
+  .header-menu a.ativo {
     background-color: var(--cor10);
   }
   .header-menu a::after {
